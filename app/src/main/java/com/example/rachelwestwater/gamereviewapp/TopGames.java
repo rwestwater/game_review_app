@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class TopGames {
 
         private ArrayList<Game> list;
+        private String gameReview;
 
         public TopGames() {
             list = new ArrayList<Game>();
@@ -23,4 +24,7 @@ public class TopGames {
         public ArrayList<Game> getList() {
             return new ArrayList<Game>(list);
         }
+
 }
+
+

@@ -21,21 +21,21 @@ public class TopGamesAdapter extends ArrayAdapter<Game> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.games_item, parent, false);
         }
 
-        Game currentMovie = getItem(position);
+        Game currentGame = getItem(position);
 
         TextView ranking = listItemView.findViewById(R.id.ranking);
-        ranking.setText(currentMovie.getRanking().toString());
+        ranking.setText(currentGame.getRanking().toString());
 
         TextView year = listItemView.findViewById(R.id.year);
-        year.setText(currentMovie.getYear().toString());
+        year.setText(currentGame.getYear().toString());
 
         TextView title = listItemView.findViewById(R.id.title);
-        title.setText(currentMovie.getTitle());
+        title.setText(currentGame.getTitle());
 
-        TextView publisher = listItemView.findViewById(R.id.year);
-        publisher.setText(currentMovie.getPublisher());
+        TextView publisher = listItemView.findViewById(R.id.publisher);
+        publisher.setText(currentGame.getPublisher());
 
-        listItemView.setTag(currentMovie);
+        listItemView.setTag(currentGame);
 
         return listItemView;
     }

@@ -1,11 +1,9 @@
 package com.example.rachelwestwater.gamereviewapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
-public class GameActivity extends AppCompatActivity {
+public class ReviewActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +11,7 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         Intent intent = getIntent();
-        Game game = (Game)intent.getSerializableExtra("game");
+        Review review = (Game)intent.getSerializableExtra("game");
     }
 }
+

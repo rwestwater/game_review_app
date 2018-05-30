@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
+    <TextView
+        android:id="@+id/game_review"
+        android:layout_width="150dp"
+        android:layout_height="107dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="45dp" />
+
 </android.support.constraint.ConstraintLayout>

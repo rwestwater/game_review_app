@@ -9,7 +9,6 @@ public class Game implements Serializable {
     private Integer year;
     private String publisher;
 
-
     public Game(Integer ranking, String title, Integer year, String publisher) {
         this.ranking = ranking;
         this.title = title;

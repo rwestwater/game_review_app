@@ -27,7 +27,6 @@ public class TopGamesActivity extends AppCompatActivity {
 
     public void onListItemClick(View listItem) {
         Game game = (Game)listItem.getTag();
-        Log.d("Game Title: ", game.getTitle());
 
         Intent intent = new Intent(this, GameActivity.class);
         intent.putExtra("game", game);
