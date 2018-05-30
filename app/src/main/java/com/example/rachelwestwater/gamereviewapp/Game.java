@@ -1,6 +1,8 @@
 package com.example.rachelwestwater.gamereviewapp;
 
-public class Game {
+import java.io.Serializable;
+
+public class Game implements Serializable {
 
     private Integer ranking;
     private String title;
